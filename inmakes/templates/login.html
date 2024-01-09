@@ -1,0 +1,16 @@
+<title>login</title>
+<style>
+    body {
+        background-color: #00FF00; 
+    }
+</style>
+
+
+<body>
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="username"><br>
+        <input type="password" name="password" placeholder="enter password"><br>
+        <input type="submit">
+    </form>
+</body>
